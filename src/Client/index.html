@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+    
+<!--     <script type="module">
+        let user = null;
+        let password = null
+        import {io} from "https://cdn.socket.io/4.3.2/socket.io.esm.min.js"
+
+        const socket = io({
+            auth:{
+                serverOffset: 0,
+
+            }
+        });
+        const form = document.getElementById('form');
+        const input = document.getElementById('input');
+        const messages = document.getElementById('messages');
+
+        socket.on('chat message', (msg, serverOffset) => {
+            const item = `<li>${msg}</li>`;
+            messages.insertAdjacentHTML('beforeend', item);
+            socket.auth.serverOffset = serverOffset;
+        })
+        form.addEventListener('submit', (e) =>{
+            e.preventDefault();
+
+            if(input.value){
+                socket.emit('chat message', input.value)
+                input.value = '';
+            }
+        })
+        
+    </script>
+ -->
+    <script type="module" src="dist/client.js"></script>    
+    <style>
+        :root{
+            color-scheme: light dark;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+       <!--  <form id="login">
+            <input type="text" name="user" id="user"
+            placeholder="Type your user name" autocomplete="off" />
+            <input type="password" name="pass" id="pass"
+            placeholder="Type your password" autocomplete="off" />
+            <button type="submit">Send</button>
+        </form>
+    <section id="chat">
+        <ul id="messages">
+
+        </ul>
+        <form id="form">
+            <input type="text" name="message" id="input"
+            placeholder="Type a message" autocomplete="off" />
+            <button type="submit">Send</button>
+        </form>
+    </section> -->
+</div>
+</body>
+</html>
