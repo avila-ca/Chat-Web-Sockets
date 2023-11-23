@@ -1,6 +1,6 @@
 
 ### 📥 Installation
-
+_________________________________________
 To get started with this template, you first need to clone the repository:
 
 ```bash
